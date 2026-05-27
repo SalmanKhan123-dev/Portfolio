@@ -546,11 +546,125 @@ footer span { color: var(--gold); }
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+
+/* ---------- Tablet — max 1024px ---------- */
+@media (max-width: 1024px) {
+  nav { padding: 1rem 2rem; }
+  section { padding: 6rem 2.5rem; }
+  #home { padding: 8rem 2.5rem 4rem; }
+  .about-grid { gap: 3rem; }
+  .contact-wrapper { gap: 3rem; }
+  .projects-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .skills-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+}
+
+/* ---------- Mobile — max 768px ---------- */
 @media (max-width: 768px) {
-  nav { padding: 1rem 1.5rem; }
-  section { padding: 5rem 1.5rem; }
-  #home { padding: 7rem 1.5rem 4rem; }
-  .about-grid,
-  .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
-  .nav-links { gap: 1.5rem; }
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none; }
+
+  nav { padding: 1rem 1.25rem; flex-wrap: wrap; gap: 0.75rem; }
+  .nav-logo { font-size: 1.4rem; }
+  .nav-links { gap: 1rem; flex-wrap: wrap; }
+  .nav-links a { font-size: 0.7rem; letter-spacing: 0.1em; }
+
+  section { padding: 4.5rem 1.25rem; }
+  #home   { padding: 6.5rem 1.25rem 4rem; }
+
+  .hero-name { font-size: clamp(3.2rem, 18vw, 5.5rem); line-height: 0.92; }
+  .hero-title { font-size: 0.85rem; }
+  .hero-desc  { font-size: 0.9rem; max-width: 100%; }
+  .hero-bg-text { font-size: 38vw; }
+  .hero-cta { flex-direction: column; gap: 0.75rem; }
+  .btn-primary, .btn-outline { width: 100%; justify-content: center; padding: 0.9rem 1.5rem; font-size: 0.75rem; }
+
+  .section-title { font-size: clamp(2rem, 10vw, 3.5rem); margin-bottom: 2.5rem; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-stats { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stat-num { font-size: 2rem; }
+
+  .skills-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .skill-category { padding: 1.5rem; }
+
+  .projects-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .project-card { padding: 1.5rem; }
+  .project-num  { font-size: 3rem; }
+
+  .cert-list { gap: 0.85rem; }
+  .cert-item { padding: 1rem 1.1rem; gap: 1rem; }
+  .cert-title  { font-size: 0.88rem; }
+  .cert-issuer { font-size: 0.72rem; }
+
+  .activities-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+
+  .contact-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
+  .contact-info p { font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .contact-link   { padding: 0.85rem 1rem; font-size: 0.82rem; }
+  .form-submit { width: 100%; text-align: center; }
+
+  footer { padding: 2rem 1.25rem; font-size: 0.7rem; line-height: 1.8; }
+  .marquee-item { font-size: 0.95rem; }
+}
+
+/* ---------- iPhone SE / Small phones — max 480px ---------- */
+@media (max-width: 480px) {
+  nav { padding: 0.85rem 1rem; }
+  .nav-links { gap: 0.7rem; }
+  .nav-links a { font-size: 0.65rem; letter-spacing: 0.06em; }
+
+  section { padding: 4rem 1rem; }
+  #home   { padding: 6rem 1rem 3.5rem; }
+
+  .hero-name  { font-size: clamp(2.8rem, 20vw, 4.5rem); }
+  .hero-title { font-size: 0.78rem; }
+  .hero-desc  { font-size: 0.85rem; line-height: 1.7; }
+  .hero-tag   { font-size: 0.68rem; }
+
+  .section-title { font-size: clamp(1.8rem, 12vw, 3rem); }
+  .section-label { font-size: 0.65rem; }
+
+  .about-stats { grid-template-columns: 1fr 1fr; gap: 0.85rem; }
+  .stat-num    { font-size: 1.8rem; }
+  .stat-label  { font-size: 0.7rem; }
+
+  .info-item      { padding: 0.85rem 1rem; }
+  .info-content p { font-size: 0.85rem; }
+
+  .skill-category { padding: 1.25rem; }
+  .skill-tag      { font-size: 0.72rem; padding: 0.3rem 0.7rem; }
+
+  .project-card { padding: 1.25rem; }
+  .project-name { font-size: 1rem; }
+  .project-desc { font-size: 0.8rem; }
+
+  .cert-item  { flex-wrap: wrap; gap: 0.75rem; padding: 0.9rem 1rem; }
+  .cert-title { font-size: 0.85rem; }
+
+  .activity-card  { padding: 1.25rem; }
+  .activity-title { font-size: 0.9rem; }
+  .activity-desc  { font-size: 0.78rem; }
+
+  .form-input, .form-textarea { font-size: 0.85rem; padding: 0.75rem 0.9rem; }
+  .form-label  { font-size: 0.68rem; }
+  .form-submit { font-size: 0.72rem; padding: 0.85rem 1.5rem; }
+
+  .contact-link { font-size: 0.78rem; padding: 0.75rem 0.9rem; }
+  footer { font-size: 0.65rem; padding: 1.75rem 1rem; }
+}
+
+/* ---------- iPhone Pro Max — max 430px ---------- */
+@media (max-width: 430px) {
+  .hero-name { font-size: clamp(2.6rem, 22vw, 4rem); }
+  .projects-grid, .skills-grid, .activities-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Very small phones — max 360px ---------- */
+@media (max-width: 360px) {
+  .nav-links { gap: 0.5rem; }
+  .nav-links a { font-size: 0.6rem; }
+  .hero-name { font-size: clamp(2.4rem, 22vw, 3.5rem); }
+  .btn-primary, .btn-outline { font-size: 0.7rem; padding: 0.8rem 1.2rem; }
+  .stat-num { font-size: 1.6rem; }
+  section { padding: 3.5rem 0.9rem; }
 }
