@@ -10,32 +10,39 @@
 </head>
 <body>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursor-ring"></div>
-
   <!-- ========== NAV ========== -->
   <nav>
     <a href="#home" class="nav-logo">SK.</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certifications">Certs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <!-- Resume download: put your actual PDF at this path, filename must match -->
+    <a href="resume.pdf" download="Salman_Khan_Resume.pdf" class="nav-resume-btn">
+      <i class="fas fa-download"></i> Resume
+    </a>
   </nav>
 
   <!-- ========== HERO ========== -->
   <section id="home">
-    <div class="hero-bg-text">DEV</div>
-    <div class="hero-content">
-      <div class="hero-tag">CS Engineer &amp; Developer</div>
-      <h1 class="hero-name">SALMAN<br><span>KHAN</span></h1>
-      <p class="hero-title">// DSA &bull; Java &bull; Web Dev &bull; Data Science</p>
-      <p class="hero-desc">Fourth year CS Engineering student at IILM University, building projects across full stack development, data science, and automation. Passionate about solving real-world problems with code.</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View Projects</a>
-        <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+    <div class="hero-content-wrapper">
+      <div class="hero-content">
+        <div class="hero-tag">CS Engineer &amp; Developer</div>
+        <h1 class="hero-name">SALMAN<br><span>KHAN</span></h1>
+        <p class="hero-title">// DSA &bull; Java &bull; Web Dev &bull; Data Science</p>
+        <p class="hero-desc">Fourth year CS Engineering student at IILM University, building projects across full stack development, data science, and automation. Passionate about solving real-world problems with code.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View Projects</a>
+          <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+      <!-- Photo card: replace the src below with your own photo (e.g. src="photo.jpg") -->
+      <div class="hero-photo">
+        <img src="https://picsum.photos/seed/salmankhan/500/640" alt="Salman Khan" width="500" height="640">
       </div>
     </div>
     <div class="hero-scroll">
@@ -72,12 +79,11 @@
     <h2 class="section-title">WHO I <span>AM</span></h2>
     <div class="about-grid">
       <div class="about-text fade-up">
-        <p>I'm Salman Khan, a Computer Science Engineering student at IILM University, Greater Noida, currently in my 4th year (Batch 2023–2027). I'm deeply passionate about building things — from web apps to data-driven tools.</p>
+        <p class="about-lead">I'm <span class="hl">Salman Khan</span>, a Computer Science Engineering student at IILM University, Greater Noida, currently in my 4th year (Batch 2023–2027). I'm deeply passionate about building things — from web apps to data-driven tools.</p>
         <p>My journey started with core languages like python and Java, and has expanded into full-stack web development with Node.js and MongoDB, and data science with Python's ecosystem of Pandas, NumPy, Matplotlib, and Seaborn.</p>
         <p>Beyond academics, I actively participate in coding competitions on LeetCode, and engage with my university's coding club as vice president, where I help organize workshops for fellow enthusiasts.</p>
         <div class="about-stats">
           <div class="stat-box"><span class="stat-num">6+</span><span class="stat-label">Projects Built</span></div>
-          
           <div class="stat-box"><span class="stat-num">6+</span><span class="stat-label">Certifications</span></div>
           <div class="stat-box"><span class="stat-num">90%</span><span class="stat-label">12th Grade Score</span></div>
           <div class="stat-box"><span class="stat-num">9+</span><span class="stat-label">Current CGPA</span></div>
@@ -103,7 +109,7 @@
         </div>
         <div class="info-item">
           <div class="info-icon"><i class="fas fa-envelope"></i></div>
-          <div class="info-content"><span>Email</span><p>salman.khan.cs27@iilm.edu/khansalmanacc@gmail.com</p></div>
+          <div class="info-content"><span>Email</span><p>salman.khan.cs27@iilm.edu &nbsp;·&nbsp; khansalmanacc@gmail.com</p></div>
         </div>
         <div class="info-item">
           <div class="info-icon"><i class="fas fa-phone"></i></div>
@@ -122,187 +128,402 @@
         <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
         <div class="skill-cat-title">Languages</div>
         <div class="skill-tags">
-          <span class="skill-tag">SQL</span><span class="skill-tag">Java</span><span class="skill-tag">Python</span>
-          <!-- <span class="skill-tag"></span><span class="skill-tag"></span><span class="skill-tag">SQL</span> -->
+          <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+          <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL</span>
         </div>
       </div>
       <div class="skill-category fade-up">
         <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
         <div class="skill-cat-title">Web Development</div>
         <div class="skill-tags">
-          <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
-          <span class="skill-tag">JavaScript</span><span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Express.js</span><span class="skill-tag">MongoDB</span>
+          <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+          <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+          <span class="skill-tag"><i class="fa-solid fa-server"></i> Express.js</span>
+          <span class="skill-tag"><i class="fa-solid fa-leaf"></i> MongoDB</span>
         </div>
       </div>
       <div class="skill-category fade-up">
         <div class="skill-cat-icon"><i class="fas fa-chart-bar"></i></div>
         <div class="skill-cat-title">Data Science</div>
         <div class="skill-tags">
-          <span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span>
-          <span class="skill-tag">Jupyter</span>
+          <span class="skill-tag"><i class="fa-solid fa-table"></i> Pandas</span>
+          <span class="skill-tag"><i class="fa-solid fa-calculator"></i> NumPy</span>
+          <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Matplotlib</span>
+          <span class="skill-tag"><i class="fa-solid fa-chart-area"></i> Seaborn</span>
+          <span class="skill-tag"><i class="fa-solid fa-book"></i> Jupyter</span>
         </div>
       </div>
       <div class="skill-category fade-up">
         <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
         <div class="skill-cat-title">Tools &amp; Platforms</div>
         <div class="skill-tags">
-          <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
-          <span class="skill-tag">Docker</span><span class="skill-tag">VS Code</span>
-          <span class="skill-tag">Postman</span><span class="skill-tag">Figma</span>
-          <span class="skill-tag">Eclipse</span>
+          <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+          <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+          <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code</span>
+          <span class="skill-tag"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+          <span class="skill-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+          <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Eclipse</span>
         </div>
       </div>
       <div class="skill-category fade-up">
         <div class="skill-cat-icon"><i class="fab fa-linux"></i></div>
         <div class="skill-cat-title">Operating Systems</div>
         <div class="skill-tags">
-          <span class="skill-tag">Linux</span><span class="skill-tag">Windows</span>
+          <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
+          <span class="skill-tag"><i class="fa-brands fa-windows"></i> Windows</span>
         </div>
       </div>
       <div class="skill-category fade-up">
         <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
         <div class="skill-cat-title">Concepts</div>
         <div class="skill-tags">
-          <span class="skill-tag">DSA</span><span class="skill-tag">OOP</span>
-          <span class="skill-tag">REST APIs</span><span class="skill-tag">Web Scraping</span>
-          <span class="skill-tag">Data Analysis</span>
+          <span class="skill-tag"><i class="fa-solid fa-sitemap"></i> DSA</span>
+          <span class="skill-tag"><i class="fa-solid fa-cubes"></i> OOP</span>
+          <span class="skill-tag"><i class="fa-solid fa-plug"></i> REST APIs</span>
+          <span class="skill-tag"><i class="fa-solid fa-spider"></i> Web Scraping</span>
+          <span class="skill-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Data Analysis</span>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ========== EXPERIENCE / INTERNSHIPS ========== -->
+  <section id="experience">
+    <div class="section-label">03 — Experience</div>
+    <h2 class="section-title">WHERE I'VE <span>INTERNED</span></h2>
+    <div class="exp-list">
+
+      <!-- ============================================================
+           INTERNSHIP #1 — filled in from your Ybi Foundation certificate.
+           The certificate image is "internship-ybi.png"; click it on the
+           page to open it full-size. To swap it, replace BOTH the
+           a href="..." and the img src="..." below with your file name.
+           ============================================================ -->
+      <article class="exp-card fade-up">
+        <div class="exp-media">
+          <span class="exp-verified"><i class="fas fa-circle-check"></i> Verified</span>
+          <a class="cert-shot" href="internship-ybi.png">
+            <img src="internship-ybi.png" alt="Ybi Foundation internship certificate — Data Science and Machine Learning" loading="lazy">
+          </a>
+        </div>
+        <div class="exp-body">
+          <div class="exp-head">
+            <div class="exp-logo"><i class="fas fa-briefcase"></i></div>
+            <div class="exp-headings">
+              <h3 class="exp-role">Data Science &amp; Machine Learning Intern</h3>
+              <div class="exp-company">Ybi Foundation <span class="exp-type">&middot; Internship</span></div>
+              <div class="exp-meta">
+                <span><i class="far fa-calendar"></i> May – Jul 2025 &middot; 2 mos</span>
+                <span><i class="fas fa-location-dot"></i> Remote</span>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-points">
+            <li>Completed a focused 2-month internship in Data Science and Machine Learning, finishing July 2025.</li>
+            <li>Worked hands-on with Python, Pandas and NumPy to clean, explore and analyse real datasets.</li>
+            <li>Built and evaluated machine learning models for prediction and classification tasks.</li>
+            <li>Turned raw data into clear visual insight with Matplotlib and Seaborn.</li>
+          </ul>
+          <div class="exp-stack">
+            <span class="project-tech">Python</span><span class="project-tech">Pandas</span><span class="project-tech">NumPy</span><span class="project-tech">Scikit-learn</span><span class="project-tech">Machine Learning</span>
+          </div>
+          <div class="exp-creds">
+            <span class="exp-cred"><i class="fas fa-hashtag"></i> Credential ID <b>YEE8BL7MCKS0M</b></span>
+            <span class="exp-cred"><i class="fas fa-certificate"></i> ISO 9001:2015 Certified</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- INTERNSHIP #2 — AICTE-EduSkills Data Engineering Virtual Internship (curriculum by AWS Academy). Certificate image: internship-eduskills.png -->
+      <article class="exp-card fade-up">
+        <div class="exp-media">
+          <span class="exp-verified"><i class="fas fa-circle-check"></i> Verified</span>
+          <a class="cert-shot" href="internship-eduskills.png">
+            <img src="internship-eduskills.png" alt="AICTE-EduSkills Data Engineering Virtual Internship certificate — curriculum by AWS Academy" loading="lazy">
+          </a>
+        </div>
+        <div class="exp-body">
+          <div class="exp-head">
+            <div class="exp-logo"><i class="fas fa-database"></i></div>
+            <div class="exp-headings">
+              <h3 class="exp-role">Data Engineering Virtual Intern</h3>
+              <div class="exp-company">AICTE&ndash;EduSkills <span class="exp-type">&middot; Virtual Internship</span></div>
+              <div class="exp-meta">
+                <span><i class="far fa-calendar"></i> Apr – Jun 2026 &middot; 8 weeks</span>
+                <span><i class="fas fa-location-dot"></i> Virtual &middot; Remote</span>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-points">
+            <li>Completed the 8-week AICTE&ndash;EduSkills Data Engineering Virtual Internship, with curriculum delivered through AWS Academy.</li>
+            <li>Built an understanding of cloud data pipelines — ingesting, storing and transforming data on AWS.</li>
+            <li>Practised ETL workflows, data lake and warehousing concepts, and SQL querying over large datasets.</li>
+            <li>Graded <b>O — Outstanding</b> on the AICTE National Internship Portal.</li>
+          </ul>
+          <div class="exp-stack">
+            <span class="project-tech">AWS</span><span class="project-tech">Data Engineering</span><span class="project-tech">ETL</span><span class="project-tech">SQL</span><span class="project-tech">Python</span>
+          </div>
+          <div class="exp-creds">
+            <span class="exp-cred"><i class="fas fa-hashtag"></i> Certificate ID <b>4373a8e7fd340e450eb6</b></span>
+            <span class="exp-cred"><i class="fas fa-award"></i> Grade <b>O — Outstanding</b></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
   <!-- ========== PROJECTS ========== -->
   <section id="projects">
-    <div class="section-label">03 — Projects</div>
+    <div class="section-label">04 — Projects</div>
     <h2 class="section-title">MY <span>WORK</span></h2>
     <div class="projects-grid">
 
-      <div class="project-card fade-up">
-        <div class="project-num">01</div>
-        <div class="project-date">APRIL 2024</div>
-        <div class="project-name">Student Performance Analysis</div>
-        <div class="project-desc">A data analysis project focused on identifying factors influencing student academic performance. Includes data preprocessing, exploratory data analysis (EDA), visualization techniques, and insights generation using Python data science libraries.</div>
-        <div class="project-stack">
-          <span class="project-tech">Python</span><span class="project-tech">EDA</span><span class="project-tech">Matplotlib</span><span class="project-tech">Numpy</span>
-        </div>
-      </div>
+      <!-- ============================================================
+           HOW TO ADD YOUR OWN SCREENSHOTS
+           1. Make a folder called "images" next to index.html
+           2. Drop your shots in, e.g. images/student-1.jpg
+           3. In each card below replace the img src="..." with your file
+              and the surrounding a href="..." with the same file
+           Each card holds 3 images: one wide cover + two smaller ones.
+           ============================================================ -->
 
-      <div class="project-card fade-up">
-        <div class="project-num">02</div>
-        <div class="project-date">AUGUST 2024</div>
-        <div class="project-name">Personal Finance Dashboard</div>
-        <div class="project-desc">A Python-based finance management application for tracking expenses, categorizing budgets, and analyzing monthly spending patterns. Includes interactive dashboards, financial reports, and visual insights for better money management.</div>
-        <div class="project-stack">
-          <span class="project-tech">Python</span><span class="project-tech">Matplotlib</span><span class="project-tech">Data Viz</span>
+      <article class="project-card fade-up">
+        <div class="project-media">
+          <a class="project-shot project-shot-main" href="https://picsum.photos/seed/sp1/1600/1000">
+            <img src="https://picsum.photos/seed/sp1/900/560" alt="Student Performance Analysis — main analysis view" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/sp2/1200/960">
+            <img src="https://picsum.photos/seed/sp2/500/400" alt="Student Performance Analysis — score distribution charts" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/sp3/1200/960">
+            <img src="https://picsum.photos/seed/sp3/500/400" alt="Student Performance Analysis — correlation heatmap" loading="lazy">
+          </a>
         </div>
-      </div>
+        <div class="project-body">
+          <div class="project-head">
+            <span class="project-num">01</span>
+            <div>
+              <div class="project-date">April 2024</div>
+              <h3 class="project-name">Student Performance Analysis</h3>
+            </div>
+          </div>
+          <ul class="project-points">
+            <li>Identified the factors that most influence student academic performance.</li>
+            <li>Handled data cleaning and preprocessing before any analysis.</li>
+            <li>Ran exploratory data analysis (EDA) with Pandas and NumPy.</li>
+            <li>Visualised the findings with Matplotlib to turn raw scores into readable insight.</li>
+          </ul>
+          <div class="project-stack">
+            <span class="project-tech">Python</span><span class="project-tech">EDA</span><span class="project-tech">Matplotlib</span><span class="project-tech">Numpy</span>
+          </div>
+          <div class="project-links">
+            <!-- replace # with your GitHub repo link -->
+            <a href="#" class="project-btn">View code <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
 
-      <div class="project-card fade-up">
-        <div class="project-num">03</div>
-        <div class="project-date">JANRUARY 2025</div>
-        <div class="project-name">Simple Web Scraper</div>
-        <div class="project-desc">A Python web scraper using BeautifulSoup and Requests, automating data collection for research with robust error handling and usable output formatting.</div>
-        <div class="project-stack">
-          <span class="project-tech">Python</span><span class="project-tech">BeautifulSoup</span><span class="project-tech">Requests</span>
+      <article class="project-card fade-up">
+        <div class="project-media">
+          <a class="project-shot project-shot-main" href="https://picsum.photos/seed/pf1/1600/1000">
+            <img src="https://picsum.photos/seed/pf1/900/560" alt="Personal Finance Dashboard — overview" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/pf2/1200/960">
+            <img src="https://picsum.photos/seed/pf2/500/400" alt="Personal Finance Dashboard — category breakdown" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/pf3/1200/960">
+            <img src="https://picsum.photos/seed/pf3/500/400" alt="Personal Finance Dashboard — monthly report" loading="lazy">
+          </a>
         </div>
-      </div>
+        <div class="project-body">
+          <div class="project-head">
+            <span class="project-num">02</span>
+            <div>
+              <div class="project-date">August 2024</div>
+              <h3 class="project-name">Personal Finance Dashboard</h3>
+            </div>
+          </div>
+          <ul class="project-points">
+            <li>Tracks expenses and categorises budgets from monthly transaction data.</li>
+            <li>Analyses spending patterns month over month.</li>
+            <li>Generates interactive dashboards and financial reports.</li>
+            <li>Turns raw spending into visual insight for better money management.</li>
+          </ul>
+          <div class="project-stack">
+            <span class="project-tech">Python</span><span class="project-tech">Matplotlib</span><span class="project-tech">Data Viz</span>
+          </div>
+          <div class="project-links">
+            <!-- replace # with your GitHub repo link -->
+            <a href="#" class="project-btn">View code <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
 
-      <div class="project-card fade-up">
-        <div class="project-num">04</div>
-        <div class="project-date">MAY 2025</div>
-        <div class="project-name">Weather Dashboard</div>
-        <div class="project-desc">An interactive JavaScript weather dashboard powered by OpenWeatherMap API, with dynamic forecasts, visual weather representations, and fully responsive design.</div>
-        <div class="project-stack">
-          <span class="project-tech">JavaScript</span><span class="project-tech">OpenWeatherMap API</span><span class="project-tech">Responsive UI</span>
+      <article class="project-card fade-up">
+        <div class="project-media">
+          <a class="project-shot project-shot-main" href="https://picsum.photos/seed/wl1/1600/1000">
+            <img src="https://picsum.photos/seed/wl1/900/560" alt="WanderLust — listings home page" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/wl2/1200/960">
+            <img src="https://picsum.photos/seed/wl2/500/400" alt="WanderLust — single listing detail" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/wl3/1200/960">
+            <img src="https://picsum.photos/seed/wl3/500/400" alt="WanderLust — new listing form" loading="lazy">
+          </a>
         </div>
-      </div>
+        <div class="project-body">
+          <div class="project-head">
+            <span class="project-num">03</span>
+            <div>
+              <div class="project-date">December 2025</div>
+              <h3 class="project-name">WanderLust – Airbnb Replica</h3>
+            </div>
+          </div>
+          <ul class="project-points">
+            <li>Full-stack Airbnb-inspired platform for exploring and listing accommodations.</li>
+            <li>Secure user authentication with protected routes.</li>
+            <li>Dynamic property listings with complete CRUD operations.</li>
+            <li>Responsive UI wired to a Node and MongoDB backend for an interactive booking flow.</li>
+          </ul>
+          <div class="project-stack">
+            <span class="project-tech">React</span><span class="project-tech">Node.js</span>
+            <span class="project-tech">MongoDB</span><span class="project-tech">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <!-- replace the # links with your live site and GitHub repo -->
+            <a href="#" class="project-btn project-btn-solid">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-btn">View code <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
 
-      <div class="project-card fade-up">
-        <div class="project-num">05</div>
-        <div class="project-date">DECEMBER 2025</div>
-        <div class="project-name">WanderLust – Airbnb Replica</div>
-        <div class="project-desc">A full-stack Airbnb-inspired web platform for exploring and listing accommodations. Features secure user authentication, dynamic property listings, CRUD operations, responsive UI design, and seamless backend integration for an interactive booking experience.</div>
-        <div class="project-stack">
-          <span class="project-tech">React</span><span class="project-tech">Node.js</span>
-          <span class="project-tech">MongoDB</span><span class="project-tech">Bootstrap</span>
+      <article class="project-card fade-up">
+        <div class="project-media">
+          <a class="project-shot project-shot-main" href="https://picsum.photos/seed/gg1/1600/1000">
+            <img src="https://picsum.photos/seed/gg1/900/560" alt="GhumiGumi — travel feed" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/gg2/1200/960">
+            <img src="https://picsum.photos/seed/gg2/500/400" alt="GhumiGumi — blog post editor" loading="lazy">
+          </a>
+          <a class="project-shot" href="https://picsum.photos/seed/gg3/1200/960">
+            <img src="https://picsum.photos/seed/gg3/500/400" alt="GhumiGumi — journey planner" loading="lazy">
+          </a>
         </div>
-      </div>
-
-      <div class="project-card fade-up">
-        <div class="project-num">06</div>
-        <div class="project-date">APRIL 2026</div>
-        <div class="project-name">GhumiGumi – Travel Blog Platform</div>
-        <div class="project-desc">A full-stack travel blogging platform where users can share travel experiences, create journey plans, and explore stories from other travelers. Features secure authentication, dynamic blog posting, interactive user engagement, and a responsive modern UI for seamless travel storytelling.</div>
-        <div class="project-stack">
-          <span class="project-tech">React</span><span class="project-tech">Node.js</span>
-          <span class="project-tech">MongoDB</span><span class="project-tech">Express.js</span>
+        <div class="project-body">
+          <div class="project-head">
+            <span class="project-num">04</span>
+            <div>
+              <div class="project-date">April 2026</div>
+              <h3 class="project-name">GhumiGumi – Travel Blog Platform</h3>
+            </div>
+          </div>
+          <ul class="project-points">
+            <li>Full-stack travel blogging platform for sharing experiences and journey plans.</li>
+            <li>Secure authentication and dynamic blog posting.</li>
+            <li>Interactive engagement between travellers on each story.</li>
+            <li>Responsive modern UI built on React, Express and MongoDB.</li>
+          </ul>
+          <div class="project-stack">
+            <span class="project-tech">React</span><span class="project-tech">Node.js</span>
+            <span class="project-tech">MongoDB</span><span class="project-tech">Express.js</span>
+          </div>
+          <div class="project-links">
+            <!-- replace the # links with your live site and GitHub repo -->
+            <a href="https://ghumigumi-1.onrender.com" target="_blank" rel="noopener" class="project-btn project-btn-solid">Live demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="#" class="project-btn">View code <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
-      </div>
+      </article>
 
     </div>
   </section>
 
   <!-- ========== CERTIFICATIONS ========== -->
   <section id="certifications">
-    <div class="section-label">04 — Certifications</div>
+    <div class="section-label">05 — Certifications</div>
     <h2 class="section-title">MY <span>CERTS</span></h2>
     <div class="cert-list">
-      <div class="cert-item fade-up">
-        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-        <div class="cert-text">
-          <div class="cert-title">Data Science with Python</div>
-          <div class="cert-issuer">Infosys Springboard</div>
+
+      <!-- ============================================================
+           HOW TO ADD YOUR OWN CERTIFICATES
+           Drop the scans in the same "images" folder, then replace both
+           the img src="..." and the a href="..." around it, e.g.
+           images/cert-data-science.jpg. One image per certificate.
+           ============================================================ -->
+
+      <article class="cert-item fade-up">
+        <a class="cert-shot" href="cert-data-science.jpg">
+          <img src="cert-data-science.jpg" alt="Data Science with Python certificate — Infosys Springboard" loading="lazy">
+        </a>
+        <div class="cert-body">
+          <div class="cert-title">Data Science with Python <i class="fas fa-check-circle"></i></div>
+          <div class="cert-issuer"><i class="fas fa-certificate"></i> Infosys Springboard</div>
+          <p class="cert-desc">Python for data analysis — NumPy, Pandas and Matplotlib, and the exploratory workflow that turns a raw dataset into a readable insight.</p>
         </div>
-        <i class="fas fa-check-circle" style="color: var(--gold); opacity: 0.6;"></i>
-      </div>
-      <div class="cert-item fade-up">
-        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-        <div class="cert-text">
-          <div class="cert-title">Java Programming Fundamentals</div>
-          <div class="cert-issuer">Infosys Springboard</div>
+      </article>
+
+      <article class="cert-item fade-up">
+        <a class="cert-shot" href="cert-java.jpg">
+          <img src="cert-java.jpg" alt="Java Programming Fundamentals certificate — Infosys Springboard" loading="lazy">
+        </a>
+        <div class="cert-body">
+          <div class="cert-title">Java Programming Fundamentals <i class="fas fa-check-circle"></i></div>
+          <div class="cert-issuer"><i class="fas fa-certificate"></i> Infosys Springboard</div>
+          <p class="cert-desc">Core Java end to end — OOP principles, collections and exception handling, the groundwork my DSA practice sits on.</p>
         </div>
-        <i class="fas fa-check-circle" style="color: var(--gold); opacity: 0.6;"></i>
-      </div>
-      <div class="cert-item fade-up">
-        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-        <div class="cert-text">
-          <div class="cert-title">Generative AI Fpundation - Training Badge</div>
-          <div class="cert-issuer">AWS Academy</div>
+      </article>
+
+      <article class="cert-item fade-up">
+        <a class="cert-shot" href="cert-genai.jpg">
+          <img src="cert-genai.jpg" alt="Generative AI Foundations training badge — AWS Academy" loading="lazy">
+        </a>
+        <div class="cert-body">
+          <div class="cert-title">Generative AI Foundations <i class="fas fa-check-circle"></i></div>
+          <div class="cert-issuer"><i class="fas fa-certificate"></i> AWS Academy — Training Badge</div>
+          <p class="cert-desc">How large language models actually work, prompt design, and where generative AI fits into real product decisions.</p>
         </div>
-        <i class="fas fa-check-circle" style="color: var(--gold); opacity: 0.6;"></i>
-      </div>
-      <div class="cert-item fade-up">
-        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-        <div class="cert-text">
-          <div class="cert-title">Full Stack Web Development</div>
-          <div class="cert-issuer">Apna College</div>
+      </article>
+
+      <article class="cert-item fade-up">
+        <a class="cert-shot" href="cert-fullstack.jpg">
+          <img src="cert-fullstack.jpg" alt="Full Stack Web Development certificate — Apna College" loading="lazy">
+        </a>
+        <div class="cert-body">
+          <div class="cert-title">Full Stack Web Development <i class="fas fa-check-circle"></i></div>
+          <div class="cert-issuer"><i class="fas fa-certificate"></i> Apna College</div>
+          <p class="cert-desc">The full stack path — HTML, CSS and JavaScript through to Node, Express and MongoDB, with REST APIs tying it together.</p>
         </div>
-        <i class="fas fa-check-circle" style="color: var(--gold); opacity: 0.6;"></i>
-      </div>
-      
+      </article>
+
     </div>
   </section>
 
   <!-- ========== ACTIVITIES ========== -->
   <section id="activities">
-    <div class="section-label">05 — Activities</div>
+    <div class="section-label">06 — Activities</div>
     <h2 class="section-title">EXTRA <span>CURRICULAR</span></h2>
     <div class="activities-grid">
       <div class="activity-card fade-up">
         <div class="activity-icon"><i class="fas fa-trophy"></i></div>
+        <span class="activity-tag">Competitive</span>
         <div class="activity-title">Coding Competitions</div>
         <div class="activity-desc">Active participant on LeetCode and Codeforces, consistently solving algorithmic challenges to sharpen data structures and problem-solving skills.</div>
       </div>
       <div class="activity-card fade-up">
         <div class="activity-icon"><i class="fas fa-laptop-code"></i></div>
+        <span class="activity-tag">Leadership</span>
         <div class="activity-title">Coding Club Leadership</div>
         <div class="activity-desc">Served as the Vice President of the Coding Club at IILM University, where I organized and managed technical events, coding competitions, and collaborative activities. Led the successful execution of the event “Tech Hunt,” encouraging problem-solving, teamwork, and active student participation in technology-driven challenges.</div>
       </div>
       <div class="activity-card fade-up">
         <div class="activity-icon"><i class="fas fa-users"></i></div>
-        <div class="activity-title">Creative Interests & Personal Development</div>
+        <span class="activity-tag">Beyond Code</span>
+        <div class="activity-title">Creative Interests &amp; Personal Development</div>
         <div class="activity-desc">Passionate about music, travel, and creative storytelling, with a strong interest in exploring new ideas and experiences. Enjoy discovering innovative technologies, watching sci-fi and adventure content, and expressing creativity through singing and content creation.</div>
       </div>
     </div>
@@ -310,48 +531,111 @@
 
   <!-- ========== CONTACT ========== -->
   <section id="contact">
-    <div class="section-label">06 — Contact</div>
+    <div class="section-label">07 — Contact</div>
     <h2 class="section-title">GET IN <span>TOUCH</span></h2>
     <div class="contact-wrapper">
+
+      <!-- LEFT: availability + direct channels -->
       <div class="contact-info fade-up">
-        <p>I'm always open to new opportunities, collaborations, and conversations. Whether it's a project idea, internship, or just a chat about tech — drop a message.</p>
+        <div class="availability">
+          <span class="availability-dot"></span>
+          Available for internships &amp; freelance
+        </div>
+        <p class="contact-intro">
+          Have a project, an internship, or just want to talk tech? Send a note below and it lands straight in my inbox — I usually reply within a day.
+        </p>
         <div class="contact-links">
           <a href="mailto:khansalmanacc@gmail.com" class="contact-link">
-            <i class="fas fa-envelope"></i><span>khansalmanacc@gmail.com</span>
+            <span class="contact-link-icon"><i class="fas fa-envelope"></i></span>
+            <span class="contact-link-text">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">khansalmanacc@gmail.com</span>
+            </span>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
           </a>
           <a href="tel:+919389600312" class="contact-link">
-            <i class="fas fa-phone"></i><span>+91-9389600312</span>
+            <span class="contact-link-icon"><i class="fas fa-phone"></i></span>
+            <span class="contact-link-text">
+              <span class="contact-link-label">Phone</span>
+              <span class="contact-link-value">+91 93896 00312</span>
+            </span>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
           </a>
-          <a href="https://www.linkedin.com/in/salmankhancse" target="_blank" class="contact-link">
-            <i class="fab fa-linkedin"></i><span>LinkedIn Profile</span>
+          <a href="https://www.linkedin.com/in/salmankhancse" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span>
+            <span class="contact-link-text">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">/in/salmankhancse</span>
+            </span>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
           </a>
-          <a href="https://leetcode.com" target="_blank" class="contact-link">
-            <i class="fas fa-terminal"></i><span>LeetCode Profile</span>
+          <a href="https://leetcode.com/u/YeE4ipDAsi/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon"><i class="fas fa-terminal"></i></span>
+            <span class="contact-link-text">
+              <span class="contact-link-label">LeetCode</span>
+              <span class="contact-link-value">Problem-solving profile</span>
+            </span>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
           </a>
-          <a href="https://github.com" target="_blank" class="contact-link">
-            <i class="fab fa-github"></i><span>GitHub Profile</span>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon"><i class="fab fa-github"></i></span>
+            <span class="contact-link-text">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">View my code</span>
+            </span>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
           </a>
         </div>
       </div>
-      <!-- <div class="contact-form fade-up">
-        <div class="form-group">
-          <label class="form-label">Your Name</label>
-          <input type="text" class="form-input" placeholder="Your Good Name">
+
+      <!-- RIGHT: message console -->
+      <form id="contact-form" class="contact-form fade-up">
+        <div class="form-head">
+          <h3 class="form-title">Send a message</h3>
+          <p class="form-sub">Fields marked <span>*</span> are required.</p>
+        </div>
+
+        <!-- ============================================================
+             WEB3FORMS — messages are delivered straight to your inbox
+             via web3forms.com. Paste YOUR access key below (get it free
+             at https://web3forms.com — just enter your email). No signup,
+             no server needed. Full guide in README.txt.
+             ============================================================ -->
+        <input type="hidden" name="access_key" value="d43b371e-ea78-45c3-a887-b04364b72b1c">
+        <!-- spam honeypot: real people leave this empty, bots fill it -->
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="enquiry-name">Your name *</label>
+            <input type="text" id="enquiry-name" name="name" class="form-input" placeholder="Jane Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="enquiry-email">Email address *</label>
+            <input type="email" id="enquiry-email" name="email" class="form-input" placeholder="jane@example.com" required>
+          </div>
         </div>
         <div class="form-group">
-          <label class="form-label">Email Address</label>
-          <input type="email" class="form-input" placeholder="goodname@example.com">
+          <label class="form-label" for="enquiry-subject">Subject</label>
+          <input type="text" id="enquiry-subject" name="subject" class="form-input" placeholder="Internship / Collaboration / Project">
         </div>
         <div class="form-group">
-          <label class="form-label">Subject</label>
-          <input type="text" class="form-input" placeholder="Internship / Collaboration / etc.">
+          <label class="form-label" for="enquiry-message">Message *</label>
+          <textarea id="enquiry-message" name="message" class="form-textarea" placeholder="Tell me a bit about what you have in mind..." required></textarea>
         </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
-        </div>
-        <button class="form-submit"><i class="fas fa-paper-plane"></i> &nbsp;Send Message</button>
-      </div> -->
+
+        <button type="submit" id="send-btn" class="form-submit">
+          <span class="form-submit-label"><i class="fas fa-paper-plane"></i>&nbsp; Send message</span>
+        </button>
+
+        <!-- live status readout (filled in by script.js) -->
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+        <div class="form-or"><span>or reach me directly</span></div>
+        <button type="button" id="whatsapp-btn" class="form-whatsapp">
+          <i class="fab fa-whatsapp"></i>&nbsp; Message me on WhatsApp
+        </button>
+      </form>
     </div>
   </section>
 
@@ -359,6 +643,24 @@
   <footer>
     Designed &amp; built by <span>Salman Khan</span> &nbsp;&bull;&nbsp; IILM University, Greater Noida &nbsp;&bull;&nbsp; <span>&copy; 2026</span>
   </footer>
+
+  <!-- ========== IMAGE LIGHTBOX (opens when a project shot is clicked) ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Project image viewer">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption">
+        <span id="lightbox-caption-text"></span>
+        <span class="lightbox-count" id="lightbox-count"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>
