@@ -174,13 +174,12 @@ nav {
    card stays perfectly square AND always inside the first screen.
    margin-right insets it from the right edge instead of hugging it.  */
 .hero-photo {
-  --photo-size: min(560px, calc(100vh - 15rem), 33vw);
+  --photo-height: min(640px, calc(100vh - 12rem));
   --photo-radius: clamp(1.5rem, 3vw, 3rem);
   position: relative;
   flex: 0 0 auto;
-  width: var(--photo-size);
-  height: var(--photo-size);
-  aspect-ratio: 1 / 1;
+  height: var(--photo-height);
+  aspect-ratio: 1144 / 1375;   /* your image's real ratio */
   margin-right: clamp(0rem, 5vw, 6rem);
 }
 /* offset outline sitting behind the frame */
